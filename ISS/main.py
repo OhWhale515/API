@@ -17,6 +17,7 @@ MY_LONG = -0.127758
 parameters = {
     "lat": MY_LAT,
     "lng": MY_LONG,
+    "formatted": 0,
     
 }
 
@@ -25,4 +26,5 @@ response.raise_for_status()
 data = response.json()
 sunrise = data["results"]["sunrise"]
 sunset = data["results"]["sunset"]
-print(sunrise, sunset)
+
+print(sunrise.split)
